@@ -9,6 +9,6 @@ type AnchorProps = {
 } & ComponentPropsWithoutRef<'a'>;
 
 export default function Button(props: ButtonProps | AnchorProps) {
-  if (props.el === 'anchor') return <a {...props}></a>;
-  return <button {...props}></button>;
+  if (props.el === 'anchor') return <a className="button" {...props}></a>;
+  return <button className="button" {...props}></button>;
 }
