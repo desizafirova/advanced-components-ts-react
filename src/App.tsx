@@ -1,14 +1,9 @@
-import Button from './components/Button';
+import Container from './components/Container';
 
 function App() {
   return (
     <main>
-      <p>
-        <Button href="http://google.com">An Anchor</Button>
-      </p>
-      <p>
-        <Button>A Button</Button>
-      </p>
+      <Container as={'button'} />
     </main>
   );
 }
