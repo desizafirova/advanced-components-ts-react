@@ -1,11 +1,11 @@
-import Button from './UI/Button.tsx';
+import { type Timer as TimerProps } from '../store/timers-context.tsx';
 
-export default function Header() {
+export default function Header({ name, duration }: TimerProps) {
   return (
     <header>
-      <h1>ReactTimer</h1>
+      <h1>{name}</h1>
 
-      <Button>Stop Timers</Button>
+      <p>{duration}</p>
     </header>
   );
 }
